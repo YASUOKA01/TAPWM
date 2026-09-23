@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 15</title>
+    <style>
+        body {
+            background-color: rgb(0, 195, 255);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            width: 320px;
+            margin: 0 auto;
+            border: 2px solid white;
+            padding: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cursos Fatec Sorocaba</h1>
+
+    <div>
+        <label for="curso">Selecione o curso:</label><br><br>
+        <select id="curso" name="curso" onchange="abrirCurso(this.value)">
+            <option value="">-- Selecione --</option>
+            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+            <option value="gestao">Gestão Empresarial</option>
+            <option value="logistica">Logística</option>
+            <option value="fabricacao">Fabricação Mecânica</option>
+            <option value="projetos">Projetos Mecânicos</option>
+            <option value="biomedicos">Sistemas Biomédicos</option>
+        </select>
+    </div>
+
+    <script src="atividade_15.js"></script>
+</body>
+
+</html>

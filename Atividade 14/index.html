@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 14</title>
+    <style>
+        body {
+            background-color: rgb(0, 195, 255);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 320px;
+            margin: 0 auto;
+            border: 2px solid white;
+            padding: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulário Principal</h1>
+
+    <form name="nomeform" onsubmit="return validar()">
+        Nome: <br><input type="text" name="nome"><br><br>
+        Email: <br><input type="email" name="email"><br><br>
+        Comentário: <br><textarea name="comentario"></textarea><br><br>
+
+        Pesquisa:<br>
+        <input type="radio" name="pesquisa" value="sim"> Sim
+        <input type="radio" name="pesquisa" value="nao"> Não<br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <script src="atividade_14.js"></script>
+</body>
+
+</html>
